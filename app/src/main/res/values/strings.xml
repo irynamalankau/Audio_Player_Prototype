@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Player</string>
+    <string name="abba_activity_label">ABBA</string>
+    <string name="queen_activity_label">Queen</string>
+    <string name="metallica_activity_label">Metallica</string>
+    <string name="music">music</string>
+    <string name="favorites">favorite</string>
+    <string name="places">places</string>
+    <string name="news">news</string>
+    <string name="player_activity_label">Player</string>
+</resources>
