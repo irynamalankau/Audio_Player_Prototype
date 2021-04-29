@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Audio_Player_Prototype">
+        android:theme="@style/Theme.Musical_Player">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AbbaActivity" android:label="@string/abba_activity_label"/>
+        <activity android:name=".MetallicaActivity" android:label="@string/metallica_activity_label"/>
+        <activity android:name=".QueenActivity" android:label="@string/queen_activity_label"/>
+        <activity android:name=".PlayerActivity" android:label="@string/player_activity_label"/>
     </application>
 
 </manifest>
