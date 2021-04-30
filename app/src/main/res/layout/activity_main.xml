@@ -10,15 +10,15 @@
 
     <GridView
         android:id="@+id/grid"
-        android:layout_width="280dp"
+        android:layout_width="@dimen/grid_width"
         android:layout_height="wrap_content"
-        android:horizontalSpacing="8dp"
-        android:verticalSpacing="8dp"
+        android:horizontalSpacing="@dimen/grid_horizontal_spacing"
+        android:verticalSpacing="@dimen/grid_vertical_spacing"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:background="#e6e1e1"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/grid_margin_top"
         android:numColumns="2"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
