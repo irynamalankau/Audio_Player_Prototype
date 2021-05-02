@@ -18,5 +18,6 @@
     <dimen name="artist_text">12sp</dimen>
     <dimen name="image_list_width">28dp</dimen>
     <dimen name="image_list_height">28dp</dimen>
-
+    <!--listView-->
+    <dimen name="list_view_padding">16dp</dimen>
 </resources>

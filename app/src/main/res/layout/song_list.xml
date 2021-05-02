@@ -5,5 +5,5 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="@dimen/list_view_padding"
     tools:context="com.example.audio_player_prototype.AbbaActivity"/>
