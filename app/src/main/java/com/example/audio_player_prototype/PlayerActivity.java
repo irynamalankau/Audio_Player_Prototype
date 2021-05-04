@@ -20,7 +20,7 @@ public class PlayerActivity extends AppCompatActivity {
         TextView songTitle = findViewById(R.id.song_title_player);
         songTitle.setText(extras[0]);
 
-        TextView artist = findViewById(R.id.artist);
+        TextView artist = findViewById(R.id.artist_player);
         artist.setText(extras[1]);
 
     }

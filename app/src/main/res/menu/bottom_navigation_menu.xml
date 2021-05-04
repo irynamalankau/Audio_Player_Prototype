@@ -2,22 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/bottom_nav_loop"
-        android:enabled="true"
+        android:enabled="false"
         android:icon="@drawable/round_loop_black_18dp"
-        android:title="" />
+        android:title="@string/bottom_nav_loop" />
     <item
         android:id="@+id/bottom_nav_repeat"
         android:enabled="true"
         android:icon="@drawable/round_repeat_black_18dp"
-        android:title="" />
+        android:title="@string/bottom_nav_repeat" />
     <item
         android:id="@+id/bottom_nav_shuffle"
         android:enabled="true"
         android:icon="@drawable/round_shuffle_black_18dp"
-        android:title="" />
+        android:title="@string/bottom_nav_shuffle" />
     <item
         android:id="@+id/bottom_nav_playlist_add"
         android:enabled="true"
         android:icon="@drawable/round_playlist_add_black_18dp"
-        android:title="" />
+        android:title="@string/bottom_nav_add_playlist" />
 </menu>

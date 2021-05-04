@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:background="#e6e1e1"
-        android:layout_marginTop="@dimen/grid_margin_top"
+        android:layout_marginTop="@dimen/margin_top_32dp"
         android:numColumns="2"
         app:layout_constraintRight_toRightOf="parent" />
 

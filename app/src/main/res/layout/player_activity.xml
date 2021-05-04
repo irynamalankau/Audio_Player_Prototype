@@ -6,11 +6,11 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/image_artist"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/abba1"
+        android:id="@+id/icon_note_player"
+        android:layout_width="@dimen/note_icon_width"
+        android:layout_height="@dimen/note_icon_height"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:src="@drawable/note_variant_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,39 +19,40 @@
         android:id="@+id/song_title_player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/margin_24dp"
         android:text="TextView"
-        android:textSize="24sp"
+        android:textSize="@dimen/player_song_title_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_artist" />
+        app:layout_constraintTop_toBottomOf="@+id/icon_note_player" />
 
     <TextView
-        android:id="@+id/artist"
+        android:id="@+id/artist_player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
         android:text="TextView"
+        android:textSize="@dimen/player_artist_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/song_title_player" />
 
     <ImageView
         android:id="@+id/icon_play"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/round_play_circle_outline_black_48dp"
+        android:layout_width="@dimen/play_icon_width"
+        android:layout_height="@dimen/play_icon_height"
+        android:src="@drawable/round_play_arrow_48dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toStartOf="@+id/icon_skip_next"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/icon_skip_previous"
-        app:layout_constraintTop_toBottomOf="@+id/artist" />
+        app:layout_constraintTop_toBottomOf="@+id/artist_player" />
 
     <ImageView
         android:id="@+id/icon_skip_previous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/round_skip_previous_black_36dp"
+        android:src="@drawable/round_skip_previous_36dp"
         app:layout_constraintBottom_toBottomOf="@+id/icon_play"
         app:layout_constraintEnd_toStartOf="@+id/icon_play"
         app:layout_constraintHorizontal_bias="0.5"
@@ -62,7 +63,7 @@
         android:id="@+id/icon_skip_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/round_skip_next_black_36dp"
+        android:src="@drawable/round_skip_next_36dp"
         app:layout_constraintBottom_toBottomOf="@+id/icon_play"
         app:layout_constraintEnd_toStartOf="@+id/icon_fast_forward"
         app:layout_constraintHorizontal_bias="0.5"
@@ -73,7 +74,7 @@
         android:id="@+id/icon_fast_rewind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/round_fast_rewind_black_36dp"
+        android:src="@drawable/round_fast_rewind_36dp"
         app:layout_constraintBottom_toBottomOf="@+id/icon_skip_previous"
         app:layout_constraintEnd_toStartOf="@+id/icon_skip_previous"
         app:layout_constraintHorizontal_bias="0.5"
@@ -84,7 +85,7 @@
         android:id="@+id/icon_fast_forward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/round_fast_forward_black_36dp"
+        android:src="@drawable/round_fast_forward_36dp"
         app:layout_constraintBottom_toBottomOf="@+id/icon_skip_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -97,6 +98,7 @@
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

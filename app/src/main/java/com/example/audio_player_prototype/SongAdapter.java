@@ -33,7 +33,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
         songTitleTextView.setText(currentItem.getSongTitle());
 
         // Find the TextView in the list_item.xml layout with the ID artist and assign the value
-        TextView artistTextView = listItemView.findViewById(R.id.artist);
+        TextView artistTextView = listItemView.findViewById(R.id.artist_player);
         artistTextView.setText(currentItem.getArtist());
 
         // Find the TextView in the list_item.xml layout with the ID duration and assign the value

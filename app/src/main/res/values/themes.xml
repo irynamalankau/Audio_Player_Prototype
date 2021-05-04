@@ -2,12 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Musical_Player" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#5f3360</item>
-        <item name="colorPrimaryVariant">#340a36</item>
+        <item name="colorPrimary">#6633CC</item>
+        <item name="colorPrimaryVariant">#2b009a</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">#12f5e5</item>
-        <item name="colorSecondaryVariant">#00c1b3</item>
+        <item name="colorSecondary">#00EDFF</item>
+        <item name="colorSecondaryVariant">#00bacc</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>

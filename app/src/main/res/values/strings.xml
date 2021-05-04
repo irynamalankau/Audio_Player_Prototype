@@ -8,4 +8,8 @@
     <string name="places">places</string>
     <string name="news">news</string>
     <string name="player_activity_label">Player</string>
+    <string name="bottom_nav_loop">loop</string>
+    <string name="bottom_nav_repeat">repeat</string>
+    <string name="bottom_nav_shuffle">shuffle</string>
+    <string name="bottom_nav_add_playlist">add playlist</string>
 </resources>
