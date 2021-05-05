@@ -1,5 +1,5 @@
 <resources>
-    <string name="albums_label">Albums</string>
+    <string name="main_activity_label">Audio Player</string>
     <string name="abba_activity_label">ABBA</string>
     <string name="queen_activity_label">Queen</string>
     <string name="metallica_activity_label">Metallica</string>
@@ -7,7 +7,7 @@
     <string name="favorites">favorite</string>
     <string name="places">places</string>
     <string name="news">news</string>
-    <string name="player_activity_label">Player</string>
+    <string name="player_activity_label">Play Now</string>
     <string name="bottom_nav_loop">loop</string>
     <string name="bottom_nav_repeat">repeat</string>
     <string name="bottom_nav_shuffle">shuffle</string>
