@@ -12,4 +12,5 @@
     <string name="bottom_nav_repeat">repeat</string>
     <string name="bottom_nav_shuffle">shuffle</string>
     <string name="bottom_nav_add_playlist">add playlist</string>
+    <string name="title_albums">Albums</string>
 </resources>

@@ -2,15 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_light"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card"
-        android:layout_width="@dimen/card_width"
-        android:layout_height="@dimen/card_height"
-        android:layout_margin="@dimen/card_margin">
-
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal">
 
         <TextView
             android:id="@+id/album"

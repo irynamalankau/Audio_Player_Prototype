@@ -12,19 +12,19 @@ import android.widget.GridView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    //list of albums for GridView
+    private ArrayList<String> albumList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //create list of albums
-        ArrayList<String> albumList = new ArrayList<>();
         albumList.add("ABBA");
         albumList.add("Queen");
         albumList.add("Metallica");
 
-        //set album adaptor to gridView
+        //set album adaptor to GridView
         AlbumAdapter adapter = new AlbumAdapter(this, albumList);
         GridView albumGrid = findViewById(R.id.grid);
         albumGrid.setAdapter(adapter);

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--card-->
-    <dimen name="card_margin">8dp</dimen>
-    <dimen name="card_width">120dp</dimen>
-    <dimen name="card_height">120dp</dimen>
+    <dimen name="card_margin">0dp</dimen>
+    <dimen name="card_width">150dp</dimen>
+    <dimen name="card_height">150dp</dimen>
     <dimen name="card_text">18sp</dimen>
     <!--general-->
     <dimen name="margin_8dp">8dp</dimen>
@@ -11,8 +11,8 @@
     <dimen name="margin_24dp">24dp</dimen>
     <dimen name="margin_32dp">32dp</dimen>
     <!--grid-->
-    <dimen name="grid_width">280dp</dimen>
-    <dimen name="grid_horizontal_spacing">8dp</dimen>
+    <dimen name="label_text">24sp</dimen>
+    <dimen name="grid_horizontal_spacing">-8dp</dimen>
     <dimen name="grid_vertical_spacing">8dp</dimen>
     <!--list_item-->
     <dimen name="song_text">16sp</dimen>
