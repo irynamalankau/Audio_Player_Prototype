@@ -12,7 +12,7 @@
         android:layout_height="@dimen/image_list_height"
         android:layout_marginStart="@dimen/margin_8dp"
         android:layout_marginLeft="@dimen/margin_8dp"
-        android:src="@drawable/note"
+        android:src="@drawable/ic_note_list"
         app:layout_constraintBottom_toBottomOf="@+id/songTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/artist_player" />
