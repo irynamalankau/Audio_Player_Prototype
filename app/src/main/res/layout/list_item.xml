@@ -7,48 +7,32 @@
     android:background="@color/grey_light">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="@dimen/image_list_width"
-        android:layout_height="@dimen/image_list_height"
-        android:layout_marginStart="@dimen/margin_8dp"
-        android:layout_marginLeft="@dimen/margin_8dp"
+        android:id="@+id/icon_list_item"
+        style="@style/icon_list_item"
         android:src="@drawable/ic_note_list"
-        app:layout_constraintBottom_toBottomOf="@+id/songTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/song_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/artist_player" />
+        app:layout_constraintTop_toTopOf="@+id/artist_name" />
 
     <TextView
-        android:id="@+id/songTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_8dp"
-        android:layout_marginLeft="@dimen/margin_8dp"
-        android:textSize="@dimen/song_text"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/artist_player"
+        android:id="@+id/song_title"
+        style="@style/song_title_list_item"
+        app:layout_constraintStart_toEndOf="@+id/icon_list_item"
+        app:layout_constraintTop_toBottomOf="@+id/artist_name"
         tools:text="title" />
 
     <TextView
-        android:id="@+id/artist_player"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_8dp"
-        android:layout_marginLeft="@dimen/margin_8dp"
-        android:layout_marginTop="@dimen/margin_8dp"
-        android:textSize="@dimen/artist_text"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        android:id="@+id/artist_name"
+        style="@style/artist_list_item"
+        app:layout_constraintStart_toEndOf="@+id/icon_list_item"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="artist" />
 
     <TextView
         android:id="@+id/duration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_16dp"
-        android:layout_marginRight="@dimen/margin_16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/songTitle"
+        style="@style/duration_list_item"
+        app:layout_constraintBottom_toBottomOf="@+id/song_title"
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="dur" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

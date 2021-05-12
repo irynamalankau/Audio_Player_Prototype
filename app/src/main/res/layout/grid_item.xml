@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,33 +10,23 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card"
-        android:layout_width="@dimen/card_width"
-        android:layout_height="@dimen/card_height"
-        android:layout_gravity="center_horizontal">
+        style="@style/grid_item_card">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_album"
-                android:layout_marginBottom="@dimen/margin_8dp"
-                android:layout_gravity="center" />
+                style="@style/grid_item_image"
+                app:srcCompat="@drawable/ic_album" />
 
             <TextView
                 android:id="@+id/album"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textSize="@dimen/card_text"
-                tools:text="Album"
-                android:textAllCaps="true" />
+                style="@style/grid_item_album_title"
+                tools:text="Album" />
         </LinearLayout>
-
 
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

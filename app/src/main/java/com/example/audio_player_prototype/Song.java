@@ -8,25 +8,22 @@ public class Song {
 
     private String mSongDuration;
 
-    public Song(String songTitle, String artist, String songDuration){
+    public Song(String songTitle, String artist, String songDuration) {
         mSongTitle = songTitle;
         mArtist = artist;
         mSongDuration = songDuration;
     }
 
-    public String getSongTitle(){
+    public String getSongTitle() {
         return mSongTitle;
     }
 
-    public String getArtist(){
+    public String getArtist() {
         return mArtist;
     }
 
-    public String getSongDuration(){
+    public String getSongDuration() {
         return mSongDuration;
-
     }
-
-
 }
 

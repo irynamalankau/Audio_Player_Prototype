@@ -2,9 +2,5 @@
 <ListView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/list_view_padding"
-    android:background="@color/grey_light"
-    tools:context="com.example.audio_player_prototype.AbbaActivity"/>
+    style="@style/list"
+    tools:context="com.example.audio_player_prototype.AbbaActivity" />

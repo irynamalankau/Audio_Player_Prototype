@@ -5,7 +5,6 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:screenOrientation="portrait"
         android:label="@string/main_activity_label"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -17,10 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AbbaActivity" android:label="@string/abba_activity_label"/>
-        <activity android:name=".MetallicaActivity" android:label="@string/metallica_activity_label"/>
-        <activity android:name=".QueenActivity" android:label="@string/queen_activity_label"/>
-        <activity android:name=".PlayerActivity" android:label="@string/player_activity_label"/>
+        <activity
+            android:name=".AbbaActivity"
+            android:label="@string/abba_activity_label" />
+        <activity
+            android:name=".MetallicaActivity"
+            android:label="@string/metallica_activity_label" />
+        <activity
+            android:name=".QueenActivity"
+            android:label="@string/queen_activity_label" />
+        <activity
+            android:name=".PlayerActivity"
+            android:label="@string/player_activity_label" />
+        <activity
+            android:name=".ChicagoActivity"
+            android:label="@string/chicago_activity_label" />
     </application>
 
 </manifest>

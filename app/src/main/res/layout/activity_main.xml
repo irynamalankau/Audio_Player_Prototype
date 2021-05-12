@@ -2,34 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/grey_light"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_light"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/albums_activity_label"
         android:text="@string/title_albums"
-        android:textSize="@dimen/label_text"
-        android:layout_marginTop="@dimen/margin_24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textAllCaps="true"
-        android:textColor="@color/design_default_color_secondary_variant" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <GridView
         android:id="@+id/grid"
-        android:layout_width="@dimen/grid_width"
-        android:layout_height="wrap_content"
-        android:background="@color/grey_light"
-        android:layout_marginTop="@dimen/margin_24dp"
-        android:gravity="center"
-        android:horizontalSpacing="@dimen/grid_horizontal_spacing"
-        android:numColumns="2"
-        android:verticalSpacing="@dimen/grid_vertical_spacing"
+        style="@style/gridView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/label" />

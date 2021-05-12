@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--card-->
-    <dimen name="card_margin">0dp</dimen>
-    <dimen name="card_width">140dp</dimen>
-    <dimen name="card_height">140dp</dimen>
-    <dimen name="card_text">14sp</dimen>
+    <!--card album-->
+    <dimen name="card_album_margin">0dp</dimen>
+    <dimen name="card_album_width">140dp</dimen>
+    <dimen name="card_album_height">140dp</dimen>
+    <dimen name="card_album_text">14sp</dimen>
     <!--general-->
     <dimen name="margin_8dp">8dp</dimen>
     <dimen name="margin_16dp">16dp</dimen>
@@ -15,6 +15,9 @@
     <dimen name="grid_horizontal_spacing">10dp</dimen>
     <dimen name="grid_vertical_spacing">10dp</dimen>
     <dimen name="grid_width">290dp</dimen>
+    <!--grid_item-->
+    <dimen name="grid_item_width">60dp</dimen>
+    <dimen name="grid_item_height">60dp</dimen>
     <!--list_item-->
     <dimen name="song_text">16sp</dimen>
     <dimen name="artist_text">12sp</dimen>
@@ -22,7 +25,7 @@
     <dimen name="image_list_height">28dp</dimen>
     <!--listView-->
     <dimen name="list_view_padding">16dp</dimen>
-    <!--player-->
+    <!--player activity-->
     <dimen name="note_icon_width">150dp</dimen>
     <dimen name="note_icon_height">150dp</dimen>
     <dimen name="play_icon_height">70dp</dimen>
@@ -31,4 +34,10 @@
     <dimen name="nav_icon_height">40dp</dimen>
     <dimen name="player_song_title_text">24sp</dimen>
     <dimen name="player_artist_text">16sp</dimen>
+    <!--player activity card-->
+    <dimen name="card_player_height">150dp</dimen>
+    <dimen name="card_player_width">150dp</dimen>
+    <dimen name="card_image_player_width">100dp</dimen>
+    <dimen name="card_image_player_height">100dp</dimen>
+
 </resources>

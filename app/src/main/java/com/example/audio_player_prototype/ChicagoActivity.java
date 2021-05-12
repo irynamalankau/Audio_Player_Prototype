@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class MetallicaActivity extends AppCompatActivity {
+public class ChicagoActivity extends AppCompatActivity {
 
     private ArrayList<Song> songList = new ArrayList<>();
 
@@ -22,14 +22,10 @@ public class MetallicaActivity extends AppCompatActivity {
         setContentView(R.layout.song_list);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //disable landscape mode
 
-        songList.add(new Song("All Your Lies", "Metallica", "3:15"));
-        songList.add(new Song("Am I Savage?", "Metallica", "3:25"));
-        songList.add(new Song("Astronomy", "Metallica", "4:05"));
-        songList.add(new Song("Clampdown", "Metallica", "3:37"));
-        songList.add(new Song("Devil's Dance", "Metallica", "3:48"));
-        songList.add(new Song("Green Hell", "Metallica", "3:29"));
-        songList.add(new Song("Junior Dad", "Metallica", "4:15"));
-        songList.add(new Song("Overkill", "Metallica", "3:23"));
+        songList.add(new Song("Hard to say I'm sorry", "Chicago", "3:15"));
+        songList.add(new Song("You are the inspiration", "Chicago", "3:25"));
+        songList.add(new Song("If you leave me now", "Chicago", "4:05"));
+        songList.add(new Song("Saturday in the park", "Chicago", "3:37"));
 
         //set song adapter to the list
         SongAdapter adapter = new SongAdapter(this, songList);

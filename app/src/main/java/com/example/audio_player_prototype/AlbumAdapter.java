@@ -17,7 +17,6 @@ public class AlbumAdapter extends ArrayAdapter<String> {
 
     public AlbumAdapter(@NonNull Context context, ArrayList<String> albums) {
         super(context, 0, albums);
-
     }
 
     @NonNull
@@ -25,7 +24,7 @@ public class AlbumAdapter extends ArrayAdapter<String> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.grid_item, parent, false);
         }
@@ -39,10 +38,7 @@ public class AlbumAdapter extends ArrayAdapter<String> {
         //get album name of the current Album object and set the textView
         albumTextView.setText(currentAlbum);
 
-
-
         return listItemView;
     }
-
 }
 

@@ -3,6 +3,7 @@ package com.example.audio_player_prototype;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,11 +16,11 @@ public class AbbaActivity extends AppCompatActivity {
     //create lists of songs
     private ArrayList<Song> songList = new ArrayList<>();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //disable landscape mode
 
         songList.add(new Song("The visitors", "ABBA", "5:47"));
         songList.add(new Song("When all is sad and done", "ABBA", "3:18"));

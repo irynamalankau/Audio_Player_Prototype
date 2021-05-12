@@ -40,4 +40,99 @@
         <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
         <item name="android:layout_marginRight">@dimen/margin_16dp</item>
     </style>
+
+    <style name="albums_activity_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin_24dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/design_default_color_secondary_variant</item>
+        <item name="android:textSize">@dimen/label_text</item>
+    </style>
+
+    <style name="gridView">
+        <item name="android:layout_width">@dimen/grid_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin_24dp</item>
+        <item name="android:background">@color/grey_light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:horizontalSpacing">@dimen/grid_horizontal_spacing</item>
+        <item name="android:numColumns">2</item>
+        <item name="android:verticalSpacing">@dimen/grid_vertical_spacing</item>
+    </style>
+
+    <style name="grid_item_card">
+        <item name="android:layout_width">@dimen/card_album_width</item>
+        <item name="android:layout_height">@dimen/card_album_height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="grid_item_image">
+        <item name="android:layout_width">@dimen/grid_item_width</item>
+        <item name="android:layout_height">@dimen/grid_item_height</item>
+        <item name="android:layout_marginBottom">@dimen/margin_8dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="grid_item_album_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/card_album_text</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="card_player">
+        <item name="android:layout_width">@dimen/card_player_width</item>
+        <item name="android:layout_height">@dimen/card_player_height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_24dp</item>
+    </style>
+
+    <style name="card_image_player">
+        <item name="android:layout_width">@dimen/card_image_player_width</item>
+        <item name="android:layout_height">@dimen/card_image_player_height</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="icon_list_item">
+        <item name="android:layout_width">@dimen/image_list_width</item>
+        <item name="android:layout_height">@dimen/image_list_height</item>
+        <item name="android:layout_marginStart">@dimen/margin_8dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_8dp</item>
+    </style>
+
+    <style name="song_title_list_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_8dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_8dp</item>
+        <item name="android:textSize">@dimen/song_text</item>
+    </style>
+
+    <style name="artist_list_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_8dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_8dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_8dp</item>
+        <item name="android:textSize">@dimen/artist_text</item>
+    </style>
+
+    <style name="duration_list_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_16dp</item>
+    </style>
+
+    <style name="list">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/list_view_padding</item>
+        <item name="android:background">@color/grey_light</item>
+    </style>
 </resources>

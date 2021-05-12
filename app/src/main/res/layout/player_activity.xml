@@ -6,80 +6,85 @@
     android:layout_height="match_parent"
     android:background="@color/grey_light">
 
-    <ImageView
-        android:id="@+id/icon_note_player"
-        android:src="@drawable/image_note"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_player"
+        style="@style/card_player"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/icon_note_player" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            style="@style/card_image_player"
+            app:srcCompat="@drawable/ic_musical_note" />
+
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/song_title_player"
+        style="@style/song_title_player"
+        android:layout_marginTop="24dp"
         android:text="Song"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/icon_note_player"
-        style="@style/song_title_player" />
+        app:layout_constraintTop_toBottomOf="@+id/card_player" />
 
     <TextView
-        android:id="@+id/artist_player"
+        android:id="@+id/artist_name"
+        style="@style/artist_player"
         android:text="Artist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/song_title_player"
-        style="@style/artist_player" />
+        app:layout_constraintTop_toBottomOf="@+id/song_title_player" />
 
     <ImageView
         android:id="@+id/icon_play"
-        android:src="@drawable/ic_play_arrow"
+        style="@style/icon_play"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toStartOf="@+id/icon_skip_next"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/icon_skip_previous"
-        app:layout_constraintTop_toBottomOf="@+id/artist_player"
-        style="@style/icon_play" />
+        app:layout_constraintTop_toBottomOf="@+id/artist_name"
+        app:srcCompat="@drawable/ic_play_arrow" />
 
     <ImageView
         android:id="@+id/icon_skip_previous"
-        android:src="@drawable/ic_skip_previous"
+        style="@style/nav_icon"
         app:layout_constraintBottom_toBottomOf="@+id/icon_play"
         app:layout_constraintEnd_toStartOf="@+id/icon_play"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/icon_fast_rewind"
         app:layout_constraintTop_toTopOf="@+id/icon_play"
-        style="@style/nav_icon" />
+        app:srcCompat="@drawable/ic_skip_previous" />
 
     <ImageView
         android:id="@+id/icon_skip_next"
-        android:src="@drawable/ic_skip_next"
+        style="@style/nav_icon"
         app:layout_constraintBottom_toBottomOf="@+id/icon_play"
         app:layout_constraintEnd_toStartOf="@+id/icon_fast_forward"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/icon_play"
         app:layout_constraintTop_toTopOf="@+id/icon_play"
-        style="@style/nav_icon" />
+        app:srcCompat="@drawable/ic_skip_next" />
 
     <ImageView
         android:id="@+id/icon_fast_rewind"
-        android:src="@drawable/ic_fast_rewind"
+        style="@style/icon_fast_rewind"
         app:layout_constraintBottom_toBottomOf="@+id/icon_skip_previous"
         app:layout_constraintEnd_toStartOf="@+id/icon_skip_previous"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/icon_skip_previous"
-        style="@style/icon_fast_rewind" />
+        app:srcCompat="@drawable/ic_fast_rewind" />
 
     <ImageView
         android:id="@+id/icon_fast_forward"
-        android:src="@drawable/ic_fast_forward"
+        style="@style/icon_fast_forward"
         app:layout_constraintBottom_toBottomOf="@+id/icon_skip_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/icon_skip_next"
         app:layout_constraintTop_toTopOf="@+id/icon_skip_next"
-        style="@style/icon_fast_forward" />
-
+        app:srcCompat="@drawable/ic_fast_forward" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -91,6 +96,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation_menu" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
